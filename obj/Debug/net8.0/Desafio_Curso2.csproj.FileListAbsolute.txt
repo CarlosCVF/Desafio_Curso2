@@ -12,3 +12,4 @@ C:\Users\Carlos\OneDrive\Desktop\Projects\Desafio_Curso2\obj\Debug\net8.0\refint
 C:\Users\Carlos\OneDrive\Desktop\Projects\Desafio_Curso2\obj\Debug\net8.0\Desafio_Curso2.pdb
 C:\Users\Carlos\OneDrive\Desktop\Projects\Desafio_Curso2\obj\Debug\net8.0\Desafio_Curso2.genruntimeconfig.cache
 C:\Users\Carlos\OneDrive\Desktop\Projects\Desafio_Curso2\obj\Debug\net8.0\ref\Desafio_Curso2.dll
+C:\Users\Carlos\OneDrive\Desktop\Projects\Desafio_Curso2\obj\Debug\net8.0\Desafio_Curso2.sourcelink.json
