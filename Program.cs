@@ -174,6 +174,7 @@ class Conta
     }
 }
 
+// Instanciar um objeto do tipo Conta e um do tipo Titular e mostrar as informações de Titular, a partir da Conta.
 class Program
 {
     static void Main(string[] args)
@@ -187,10 +188,108 @@ class Program
         conta.ExibirDetalhes(titular,conta);
     }
 }
-// Instanciar um objeto do tipo Conta e um do tipo Titular e mostrar as informações de Titular, a partir da Conta.
 
 // Desenvolver uma classe que represente um estoque de produtos, e que tenha as funcionalidades de adicionar novos produtos, e exibir todos os produtos no estoque.
 
+// class Produto
+// {
+//     private double preco;
+//     private int stock;
+//     public string Nome {get;set;}
+//     public double Preco
+//     {
+//         get => preco;
+//         set
+//         {
+//             if(value > 0)
+//             {
+//                 preco = value;
+//             }
+//             else
+//             {
+//                 preco = 10;
+//             }
+//         }
+//     }
+//     public int Stock
+//     {
+//         get => stock;
+//         set
+//         {
+//             if (value > 0)
+//             {
+//                 stock = value;
+//             }
+//             else
+//             {
+//                 stock = 0;
+//             }
+//         }
+//     }
+//     public string? Marca {get;set;}
+//     public string Descricao => $"{this.Nome} {this.Marca} - {this.Preco} - Quantidade: {this.Stock}";
+// }
+// public class EstoqueDeProdutos
+// {
+//     List<Produto> Produtos {get;set;} = new List<Produto>();
+//     public void AdicionarProduto(Produto produto)
+//     {
+//         Produtos.Add(produto);
+//         System.Console.WriteLine("Produto adicionado com sucesso");
+//     }
+//     public void ExibirProdutos ()
+//     {
+//         if (Produtos.Count == 0)
+//         {
+//             System.Console.WriteLine("Nenhum produto encontrado");
+//         }
+//         else
+//         {
+//             Console.WriteLine("Produtos encontrados no estoque:");
+//             foreach (var produto in Produtos)
+//             {
+//                 System.Console.WriteLine(produto);
+//             }
+//         }
+//     }
+// }
+
 // Modelar o sistema de uma escola. Crie classes para Aluno, Professor e Disciplina. A classe Aluno deve ter informações como nome, idade e notas. A classe Professor deve ter informações sobre nome e disciplinas lecionadas. A classe Disciplina deve armazenar o nome da disciplina e a lista de alunos matriculados.
 
+public class Aluno
+{
+    public string nome;
+    public int idade;
+    public double nota;
+
+}
+public class Professor
+{
+    public string nome;
+    pulbic List<Disciplina> disciplinas = new List<Disciplina>();
+
+}
+public class Disciplina
+{
+    public string nome;
+    public List<Aluno> alunos = new List<Aluno>(); 
+}
+
 // Modelar um sistema para um restaurante com classes como Restaurante, Mesa, Pedido e Cardapio. A classe Restaurante deve ter mesas que podem ser reservadas e um cardápio com itens que podem ser pedidos. Os pedidos podem estar associados a uma mesa.
+class Restaurante
+{
+    public string nome;
+    public List<Mesa> mesas = new List<Mesa>();
+}
+class Mesa
+{
+
+}
+class Pedido
+{
+
+}
+class Cardapio
+{
+
+}
