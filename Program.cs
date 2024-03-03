@@ -45,7 +45,7 @@
 //     public int Year 
 //     { 
 //         get => year;
-        
+
 //         set
 //         {
 //             if (value < 1960 || value > 2023)
@@ -147,6 +147,8 @@
 // public int Somar(int a, int b)=> a + b;
 
 // Modelar uma classe Conta, que tenha como atributos uma classe Titular, além de informações da conta, como agência, número da conta, saldo e limite, bem como um método que devolva as informações da conta de forma detalhada.
+using System.Numerics;
+
 class Titular
 {
     public string nome;
@@ -279,17 +281,25 @@ public class Disciplina
 class Restaurante
 {
     public string nome;
-    public List<Mesa> mesas = new List<Mesa>();
+    public List<Mesa> Mesas { get; set; } = new List<Mesa>();
+    public Cardapio Cardapio { get; set; } = new Cardapio();
 }
 class Mesa
 {
-
+    public int numeroDaMesa;
+    public List<Pedido> pedidos = new List<Pedido>();
 }
 class Pedido
 {
-
+    public ProdutoRestaurante Produto { get; set; }
+    public int Quantidade { get; set; }
 }
 class Cardapio
 {
-
+    List<ProdutoRestaurante> Produtos {get;set;}= new List<Produto>();
+}
+class ProdutoRestaurante
+{
+    public string nomeDoProduto;
+    public double valorProduto;
 }
