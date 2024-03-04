@@ -147,49 +147,48 @@
 // public int Somar(int a, int b)=> a + b;
 
 // Modelar uma classe Conta, que tenha como atributos uma classe Titular, além de informações da conta, como agência, número da conta, saldo e limite, bem como um método que devolva as informações da conta de forma detalhada.
-using System.Numerics;
 
-class Titular
-{
-    public string nome;
-    public long cpf;
-    public Titular(string nome, long cpf)
-    {
-        this.nome = nome;
-        this.cpf = cpf;
-    }
-}
+// class Titular
+// {
+//     public string nome;
+//     public long cpf;
+//     public Titular(string nome, long cpf)
+//     {
+//         this.nome = nome;
+//         this.cpf = cpf;
+//     }
+// }
 
-class Conta
-{
-    public Titular? titular;
-    public string? agencia;
-    public int numeroConta;
-    public double saldo;
-    public double limite;
+// class Conta
+// {
+//     public Titular? titular;
+//     public string? agencia;
+//     public int numeroConta;
+//     public double saldo;
+//     public double limite;
 
-    public void ExibirDetalhes(Titular titular, Conta conta)
-    {
-        System.Console.WriteLine($"Nome do titular: {titular.nome}\nCPF do titular: {titular.cpf}");
-        System.Console.WriteLine($"Agência: {conta.agencia}\nNúmero da conta: {conta.numeroConta}");
-        System.Console.WriteLine($"Saldo disponível: {conta.saldo}\nLimite disponível: {conta.limite}");
-    }
-}
+//     public void ExibirDetalhes(Titular titular, Conta conta)
+//     {
+//         System.Console.WriteLine($"Nome do titular: {titular.nome}\nCPF do titular: {titular.cpf}");
+//         System.Console.WriteLine($"Agência: {conta.agencia}\nNúmero da conta: {conta.numeroConta}");
+//         System.Console.WriteLine($"Saldo disponível: {conta.saldo}\nLimite disponível: {conta.limite}");
+//     }
+// }
 
 // Instanciar um objeto do tipo Conta e um do tipo Titular e mostrar as informações de Titular, a partir da Conta.
-class Program
-{
-    static void Main(string[] args)
-    {
-        Conta conta = new Conta();
-        Titular titular = new Titular("João", 34855713613);
-        conta.agencia = "007";
-        conta.numeroConta = 123013;
-        conta.saldo = 65481.20;
-        conta.limite = 2000000.00;
-        conta.ExibirDetalhes(titular,conta);
-    }
-}
+// class Program
+// {
+//     static void Main(string[] args)
+//     {
+//         Conta conta = new Conta();
+//         Titular titular = new Titular("João", 34855713613);
+//         conta.agencia = "007";
+//         conta.numeroConta = 123013;
+//         conta.saldo = 65481.20;
+//         conta.limite = 2000000.00;
+//         conta.ExibirDetalhes(titular,conta);
+//     }
+// }
 
 // Desenvolver uma classe que represente um estoque de produtos, e que tenha as funcionalidades de adicionar novos produtos, e exibir todos os produtos no estoque.
 
@@ -258,48 +257,138 @@ class Program
 
 // Modelar o sistema de uma escola. Crie classes para Aluno, Professor e Disciplina. A classe Aluno deve ter informações como nome, idade e notas. A classe Professor deve ter informações sobre nome e disciplinas lecionadas. A classe Disciplina deve armazenar o nome da disciplina e a lista de alunos matriculados.
 
-public class Aluno
-{
-    public string nome;
-    public int idade;
-    public double nota;
+// public class Aluno
+// {
+//     public string nome;
+//     public int idade;
+//     public double nota;
 
-}
-public class Professor
-{
-    public string nome;
-    pulbic List<Disciplina> disciplinas = new List<Disciplina>();
+// }
+// public class Professor
+// {
+//     public string nome;
+//     pulbic List<Disciplina> disciplinas = new List<Disciplina>();
 
-}
-public class Disciplina
-{
-    public string nome;
-    public List<Aluno> alunos = new List<Aluno>(); 
-}
+// }
+// public class Disciplina
+// {
+//     public string nome;
+//     public List<Aluno> alunos = new List<Aluno>(); 
+// }
 
 // Modelar um sistema para um restaurante com classes como Restaurante, Mesa, Pedido e Cardapio. A classe Restaurante deve ter mesas que podem ser reservadas e um cardápio com itens que podem ser pedidos. Os pedidos podem estar associados a uma mesa.
-class Restaurante
-{
-    public string nome;
-    public List<Mesa> Mesas { get; set; } = new List<Mesa>();
-    public Cardapio Cardapio { get; set; } = new Cardapio();
-}
-class Mesa
-{
-    public int numeroDaMesa;
-    public List<Pedido> pedidos = new List<Pedido>();
-}
-class Pedido
-{
-    public ProdutoRestaurante Produto { get; set; }
-    public int Quantidade { get; set; }
-}
-class Cardapio
-{
-    List<ProdutoRestaurante> Produtos {get;set;}= new List<Produto>();
-}
-class ProdutoRestaurante
-{
-    public string nomeDoProduto;
-    public double valorProduto;
-}
+// class Restaurante
+// {
+//     public string nome;
+//     public List<Mesa> Mesas { get; set; } = new List<Mesa>();
+//     public Cardapio Cardapio { get; set; } = new Cardapio();
+// }
+// class Mesa
+// {
+//     public int numeroDaMesa;
+//     public List<Pedido> pedidos = new List<Pedido>();
+// }
+// class Pedido
+// {
+//     public ProdutoRestaurante Produto { get; set; }
+//     public int Quantidade { get; set; }
+// }
+// class Cardapio
+// {
+//     List<ProdutoRestaurante> Produtos {get;set;}= new List<Produto>();
+// }
+// class ProdutoRestaurante
+// {
+//     public string nomeDoProduto;
+//     public double valorProduto;
+// }
+
+// //Criar um construtor para a classe Titular, que inicialize todas suas propriedades:
+// class Titular
+// {
+//     public Titular(string nome, string cpf, string endereco)
+//     {
+//         Nome = nome;
+//         Cpf = cpf;
+//         Endereco = endereco;
+//     }
+
+//     public string Nome {get;}
+//     public string Cpf {get;}
+//     public string Endereco {get;}
+// }
+
+//Criar um construtor para a classe Conta, que inicialize todas suas propriedades:
+// class Conta
+// {
+//     public Conta(Titular titular, int agencia, int numeroDaConta, double saldo, double limite)
+//     {
+//         Titular = titular;
+//         Agencia = agencia;
+//         NumeroDaConta = numeroDaConta;
+//         Saldo = saldo;
+//         Limite = limite;
+//     }
+
+//     public Titular Titular {get;}
+//     public int Agencia {get;}
+//     public int NumeroDaConta {get;}
+//     public double Saldo {get;}
+//     public double Limite {get;}
+
+//     public string Informacoes => $"Conta nº {this.NumeroDaConta}, Agência {this.Agencia}, Titular: {this.Titular.Nome} - Saldo: {this.Saldo}";
+//}
+//Instanciar uma Conta e exibir suas informações na tela, utilizando construtores.
+// class Program {
+//     public static void Main (string[] args) 
+//     {
+//         Titular titular1 = new("Rodrigo", "35186461", "Rua Monte Negro");
+//         Conta conta = new(titular1, 012, 65181, 600.54, 8000.20);
+//         System.Console.WriteLine(conta.Informacoes);
+//     }
+// }
+//Desenvolver uma classe que representa um catálogo de jogos, com uma lista de Jogos e métodos para manipular essa lista, bem como um construtor que faça sua inicialização.
+
+// class Game
+// {
+//     public Game(string name, string genre, int releaseYear)
+//     {
+//         Name = name;
+//         Genre = genre;
+//         ReleaseYear = releaseYear;
+//     }
+
+//     public string Name{get;}
+//     public string Genre{get;}
+//     public int ReleaseYear{get;}
+// }
+// class GameList
+// {
+//     private List<Game> Games {get; set;}
+//     public bool EmptyList => Games.Count == 0;
+//     public GameList()
+//     {
+//         Games = new List<Game>();
+//     }
+//     public void AddGame(string name, string genre, int releaseYear)
+//     {
+//         Game newGame = new Game(name,genre,releaseYear);
+//         Games.Add(newGame);
+//         System.Console.WriteLine("Novo Jogo adicionado");
+//     }
+//     public void ShowGames()
+//     {
+//         if (EmptyList)
+//         {
+//             System.Console.WriteLine("O catálogo de jogos esta vazio");
+//         }
+//         else
+//         {
+//             System.Console.WriteLine("Catálogo de Jogos:\n");
+//             foreach(var game in Games)
+//             {
+//                 System.Console.WriteLine($"Nome: {game.Name}\nGênero: {game.Genre}\nLançado em: {game.ReleaseYear}");
+//             }
+//         }
+//     }
+// }
